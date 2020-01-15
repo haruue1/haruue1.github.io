@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo|Righteous&display=swap');
+
+:root {
+	--color-neon-pink: #f535aa;
+	--color-neon-blue: #00f9ff;
+}
 
 html, body { height: 100%; overflow: hidden; }
 
@@ -16,13 +20,51 @@ body {
 	padding: 50px;
 }
 
-.haruue {
+.header {
+	position: absolute;
+	top: 0; left: 0;
+	font-family: 'Exo', sans-serif;
+	padding: 10px;
+}
+
+.navigation {
 	position: relative;
 	color: #fff;
-	font-family: 'Righteous', cursive;
-	font-weight: normal;
-    font-size: 3em;
-    text-shadow: 2px 0 #07d0df, -2px 0 #f535aa;    
+}
+
+.nav-list {
+	list-style-type: none;
+}
+
+.nav-list-item {
+	display: inline-block;
+	margin-right: 30px
+}
+
+.nav-list-item a {
+	font-family: 'Exo', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	outline: none;
+}
+
+.nav-list-item a:hover {
+	text-shadow: 1px 0 var(--color-neon-blue), -1px 0 var(--color-neon-pink); 
+}
+
+.nav-list-item a:active {
+	text-shadow: 3px 0 var(--color-neon-blue), -3px 0 var(--color-neon-pink); 
+}
+
+.haruue {
+	display: inline-block;
+	position: relative;
+	background-image: url(/assets/haruue-logo.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 300px;
 }
 
 .background {
