@@ -1,7 +1,0 @@
-#   ;     
-#  ["]    
-# /[_]\    
-#  ] [
-
-User-Agent: *
-Disallow: /humans
